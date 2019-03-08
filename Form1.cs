@@ -30,8 +30,8 @@ namespace Carrera
             {
                 t1.correr();
                 l1.correr();
-                textBox1.Text = "";
-                textBox1.Text = t1.ToString() + " " + Environment.NewLine + l1.ToString();
+                //textBox1.Text = "";
+                textBox1.Text += t1.ToString() + " " + Environment.NewLine + l1.ToString() ; // + salto de linea
             } while (t1.posicion >= 100 && l1.posicion >= 100);
             if (t1.posicion >= 100 && l1.posicion >= 100)
             {
